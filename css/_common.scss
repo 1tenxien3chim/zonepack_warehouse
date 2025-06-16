@@ -12,6 +12,7 @@
     --color-primary:#002e99;
     --color-text:#3c3c3c; 
     --color-white:#fff; 
+    --color-bg:#f7f8f9;
     //font
     --font-primary:"Open Sans",Helvetica,Roboto,Arial,sans-serif; 
     
@@ -415,7 +416,7 @@ strong{
         top: 100%;
         width:210px;
         margin: 0;
-        background-color: transparent;
+        background:var(--color-white);
         border-radius: 0px;
         visibility: hidden; 
         -webkit-transform: rotate3d(1, 0, 0, -90deg);
@@ -471,7 +472,7 @@ strong{
     .nav-menu > .menu-item > .menu-link {
         display: block;
         font-style: normal;
-        font-size:17px;   
+        font-size:16px;   
         padding: 0px; 
         font-family:var(--font-primary);
         color: var(--color-text);

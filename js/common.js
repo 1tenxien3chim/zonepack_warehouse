@@ -97,9 +97,9 @@ $( ".box-search i" ).on( "click", function() {
 //  fixed header 
 $(window).scroll(function() {
     if ($(document).scrollTop() > 10) {
-      $(".menu_header").addClass("fixd-header");
+      $(".header").addClass("fixd-header");
     } else {
-      $(".menu_header").removeClass("fixd-header");
+      $(".header").removeClass("fixd-header");
     }
 });
 $(window).scroll(function() {

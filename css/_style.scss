@@ -1,4 +1,4 @@
-@media (min-width:1200px) {
+@media (min-width:1450px) {
     .container-header{
        width:1440px;
        margin: 0 auto;
@@ -107,11 +107,21 @@
     z-index: 100;
     background: hwb(0deg 100% 0% / 60%);
     padding: 7px 0px 15px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    &.fixd-header{
+        padding:5px;
+        background:var(--color-white);
+        box-shadow: 0px 0px 3px var(--color-text);
+        .logo_pc{
+            min-width:140px;
+            margin-top: -45px;
+        }
+    }
     @media (max-width:767px) {
         padding: 0px;
     }
     .logo_pc{
-        display: inline-block;
+        display:block;
         min-width: 188px;
         margin-top: -30px;
         img{
@@ -219,6 +229,7 @@
     }
 }
 #product-home{
+    background: var(--color-bg);
     padding-top:40px;
     h1{
         text-transform: uppercase;
@@ -258,58 +269,64 @@
             text-align: center;
         }
     }
-    .content-product{
-        max-width: 940px;
-        margin: auto;
-        @media (max-width:992px) {
-            max-width: 100%;
+    .box-product{ 
+        margin-bottom: 2rem;
+        h2{
+            font-size: 1rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            text-align: center;
+            line-height: 1.4; 
+            font-weight: bold;
+            a{
+                color: var(--color-primary); 
+            }
         }
-        .box-product{ 
-            margin-bottom: 2rem;
-            h2{
-                font-size: 1rem;
-                margin-top: 1.5rem;
-                margin-bottom: 0.5rem;
+        .item-product{
+            border: 1px solid #dada;
+            position: relative;
+            padding-bottom: 75px;
+            background: var(--color-white);
+            .desc-product{
                 text-align: center;
-                line-height: 1.4; 
-                font-weight: bold;
-                a{
-                    color: var(--color-primary); 
-                }
-            }
-            .item-product{
-                border: 1px solid #dada;
-                position: relative;
-                padding-bottom: 75px;
-                .desc-product{
-                    text-align: center;
-                    padding: 1.5rem 1rem 4.5rem;
-                    display: -webkit-box;
-                    -webkit-line-clamp:5;
-                    -webkit-box-orient: vertical;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    word-break: break-word;
-                    max-height:130px; 
-                } 
-                .btn-view{
-                    bottom: 1rem;
-                    position: absolute;
-                    left: 50%;
-                    transform: translate(-50%, 0);
-                    text-align: center;
-                    background-color:var(--color-text);
-                    color:var(--color-white);
-                    padding: 5px;
-                    z-index: 10;
-                }    
+                padding: 1.5rem 1rem 4.5rem;
+                display: -webkit-box;
+                -webkit-line-clamp:5;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                word-break: break-word;
+                max-height:130px; 
             } 
-            &:hover{
-                .btn-view{
-                    background-color:#0084db;;
-                }
+            .btn-view{
+                bottom: 1rem;
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, 0);
+                text-align: center;
+                background-color:var(--color-text);
+                color:var(--color-white);
+                padding: 5px;
+                z-index: 10;
+            }    
+        } 
+        &:hover{
+            .btn-view{
+                background-color:#0084db;;
             }
-
         }
-    } 
+
+    }
+}
+.content-container{
+    max-width: 940px;
+    margin: auto;
+    @media (max-width:992px) {
+        max-width: 100%;
+    }
+    
+} 
+#news-flat{
+    background:var(--color-white);
+    padding: 2.5rem 0;
 }
