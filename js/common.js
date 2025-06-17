@@ -95,12 +95,17 @@ $( ".box-search i" ).on( "click", function() {
     $( ".search-pc" ).toggle();
 });
 //  fixed header 
-$(window).scroll(function() {
+$(window).on("scroll resize", function () {
+  if (window.innerWidth >= 992) {
     if ($(document).scrollTop() > 10) {
       $(".header").addClass("fixd-header");
     } else {
       $(".header").removeClass("fixd-header");
     }
+  } else {
+    // Nếu dưới 992px thì luôn gỡ bỏ class (nếu có)
+    $(".header").removeClass("fixd-header");
+  }
 });
 $(window).scroll(function() {
     if ($(document).scrollTop() > 50) {
