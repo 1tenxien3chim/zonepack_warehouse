@@ -21186,18 +21186,19 @@ button.scroll-top {
     background-color: var(--color-white);
   }
 }
-.social-box .list-social {
+
+.list-social {
   list-style: none;
   display: flex;
 }
-.social-box .list-social li {
+.list-social li {
   padding: 0px 10px;
 }
-.social-box .list-social li:last-child {
+.list-social li:last-child {
   padding-left: 20px;
   position: relative;
 }
-.social-box .list-social li:last-child::after {
+.list-social li:last-child::after {
   content: "";
   position: absolute;
   height: 20px;
@@ -21206,23 +21207,23 @@ button.scroll-top {
   top: 0px;
   left: 5px;
 }
-.social-box .list-social li a i {
+.list-social li a i {
   font-size: 18px;
 }
-.social-box .list-social li a i.fa-facebook-f {
+.list-social li a i.fa-facebook-f {
   color: #0866ff;
 }
-.social-box .list-social li a i.fa-x-twitter, .social-box .list-social li a i.fa-tiktok {
+.list-social li a i.fa-x-twitter, .list-social li a i.fa-tiktok {
   color: #000;
 }
-.social-box .list-social li a i.fa-youtube {
+.list-social li a i.fa-youtube {
   color: #ff0033;
 }
-.social-box .list-social li a i.fa-phone {
+.list-social li a i.fa-phone {
   color: #ff0033;
   margin-top: -5px;
 }
-.social-box .list-social li a span {
+.list-social li a span {
   display: inline-block;
   font-weight: 600;
   margin-left: 5px;
@@ -21285,7 +21286,7 @@ button.scroll-top {
   margin-top: -30px;
 }
 .header .logo_pc img {
-  max-width: 188px;
+  max-width: 180px;
   height: auto;
 }
 
@@ -21701,6 +21702,50 @@ footer .box_footer .menu_f .menu_f-item li {
 }
 footer .box_footer .menu_f .menu_f-item li a {
   color: var(--color-text);
+}
+footer .list-social {
+  margin-top: 20px;
+}
+footer .list-social li:last-child {
+  padding-left: 0px;
+}
+footer .list-social li:last-child::after {
+  display: none;
+}
+footer .list-social li:first-child {
+  padding-left: 0px;
+}
+footer .title_contact-home {
+  padding: 2.5rem 0rem 1rem;
+}
+footer .content_contact-home {
+  background: #F0F2F4;
+  padding: 1.25rem 0rem;
+}
+footer .content_contact-home .contact_home {
+  max-width: 600px;
+  margin: auto;
+  background: var(--color-white);
+  font-size: 1rem;
+  padding: 0.8125rem;
+  border-left: 3px solid #7D7D7D;
+}
+footer .content_contact-home .contact_home input, footer .content_contact-home .contact_home button {
+  border: none;
+  box-shadow: none;
+}
+footer .content_contact-home .contact_home input:hover, footer .content_contact-home .contact_home button:hover {
+  background: var(--color-white);
+}
+
+.copyright {
+  background: var(--color-white);
+  padding: 1.25rem 0rem;
+}
+.copyright p {
+  font-size: 0.7rem;
+  margin: 0px;
+  text-align: center;
 }
 
 .glass-case * {
