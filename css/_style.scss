@@ -326,6 +326,47 @@
     }
     
 } 
+.downloads{
+    display: inline-block;
+    align-items: center;
+    flex-direction: row;
+    float: right;
+    margin: 20px 10px 10px;
+    li{ 
+        float: left;
+        list-style: none;  
+        margin-left: 2px;
+
+        a{
+            
+            display: inline-flex;
+            align-items: center;
+            justify-content: center; 
+            background-color: var(--color-text);
+            width: 36px;
+            height: 36px;
+            color: var(--color-white);
+            font-weight: 600;
+        }
+        &:first-child{
+            width: auto;
+            height: auto;
+            color: var(--color-text);
+            font-weight: 200;
+            background: none;
+        }
+        &.download-label{
+            padding-top: 8px;
+            margin-right: 10px;
+        } 
+        &:hover, &.primary{
+            a{
+                background: var(--color-hover);
+            }
+        }
+    }
+        
+        }
 .news-flat{
     background:var(--color-white);
     padding: 2.5rem 0;
@@ -385,48 +426,7 @@
                     }
                 }
             }
-        }
-        .downloads{
-            display: inline-block;
-            align-items: center;
-            flex-direction: row;
-            float: right;
-            margin: 20px 10px 10px;
-            li{ 
-                float: left;
-                list-style: none;  
-                margin-left: 2px;
-
-                a{
-                    
-                    display: inline-flex;
-                    align-items: center;
-                    justify-content: center; 
-                    background-color: var(--color-text);
-                    width: 36px;
-                    height: 36px;
-                    color: var(--color-white);
-                    font-weight: 600;
-                }
-                &:first-child{
-                    width: auto;
-                    height: auto;
-                    color: var(--color-text);
-                    font-weight: 200;
-                    background: none;
-                }
-                &.download-label{
-                    padding-top: 8px;
-                    margin-right: 10px;
-                } 
-                &:hover, &.primary{
-                    a{
-                        background: var(--color-hover);
-                    }
-                }
-            }
-             
-        }
+        } 
         @media (max-width:991px) {
             .outer-composites-button{
                 position: unset;
