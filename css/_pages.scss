@@ -71,8 +71,35 @@
         }
         @media (max-width:767px) {
             margin-bottom: 2.5rem;
+        }     
+    }
+    &.hinschg{ 
+        h2{
+            font-size: 1.625rem;
+            font-weight: 100;
+            text-align: center;
         }
-           
+        .description{
+            text-align: justify!important; 
+            max-width: 940px;
+            margin: auto;
+        }
+        .content-hinschg{
+            max-width: 940px;
+            margin: auto;
+            strong{
+                text-decoration: underline;
+                margin-bottom: 0.75rem;
+            }
+            p{
+                font-weight: 100; 
+                font-size: 1rem;
+                line-height: 1.6;
+                margin-bottom: 1.25rem;
+                text-align: justify; 
+            } 
+        }
+
     }
 }
 .light-blue{
@@ -205,4 +232,4 @@ h2.title-item{
             padding-left: 0.5rem;
         }
     } 
-}
+} 

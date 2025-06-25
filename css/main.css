@@ -21822,6 +21822,31 @@ footer .content_contact-home .contact_home input:hover, footer .content_contact-
     margin-bottom: 2.5rem;
   }
 }
+.news-category.hinschg h2 {
+  font-size: 1.625rem;
+  font-weight: 100;
+  text-align: center;
+}
+.news-category.hinschg .description {
+  text-align: justify !important;
+  max-width: 940px;
+  margin: auto;
+}
+.news-category.hinschg .content-hinschg {
+  max-width: 940px;
+  margin: auto;
+}
+.news-category.hinschg .content-hinschg strong {
+  text-decoration: underline;
+  margin-bottom: 0.75rem;
+}
+.news-category.hinschg .content-hinschg p {
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  text-align: justify;
+}
 
 .light-blue {
   color: var(--color-primary);
