@@ -21847,8 +21847,43 @@ footer .content_contact-home .contact_home input:hover, footer .content_contact-
   margin-bottom: 1.25rem;
   text-align: justify;
 }
+.news-category.privacy h1 {
+  text-align: center;
+}
+.news-category.privacy .content-privacy {
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.news-category.privacy .content-privacy p {
+  font-weight: 100;
+  text-align: justify;
+}
+.news-category.privacy .content-privacy ul {
+  padding-left: 20px;
+  margin-bottom: 2rem;
+}
+.news-category.privacy .content-privacy a {
+  color: var(--color-primary);
+}
+.news-category.privacy .content-privacy .dark-blue {
+  margin-bottom: 1.5rem;
+}
+.news-category.privacy .download-privacy {
+  max-width: 700px;
+  margin: auto;
+}
+.news-category.privacy .download-privacy .item-download {
+  min-height: 175px !important;
+  margin-bottom: 1.5rem;
+}
 
 .light-blue {
+  color: var(--color-primary);
+}
+
+.dark-blue {
+  display: block;
   color: var(--color-primary);
 }
 
@@ -21943,22 +21978,23 @@ h2.title-item .dark-blue {
   margin: auto;
   margin-bottom: 2rem;
 }
-.dowload-file-news-detail .item-download {
+
+.item-download {
   min-height: 264px;
   position: relative;
   padding: 0.5rem 0.5rem 2.5rem 140px;
   background: var(--color-bg);
   margin-bottom: 2.5rem;
 }
-.dowload-file-news-detail .item-download p {
+.item-download p {
   font-weight: 100;
   line-height: 1.6;
   margin-bottom: 0.75rem;
 }
-.dowload-file-news-detail .item-download p a {
+.item-download p a {
   color: var(--color-primary);
 }
-.dowload-file-news-detail .item-download .img_item-download {
+.item-download .img_item-download {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -21966,23 +22002,31 @@ h2.title-item .dark-blue {
   height: 175px;
   border: 1px solid #dadada;
 }
-.dowload-file-news-detail .item-download .downloads {
+.item-download .downloads {
   position: absolute;
   right: -0.5rem;
   bottom: -0.5rem;
 }
-.dowload-file-news-detail .item-download .downloads .download-label {
+.item-download .downloads .download-label {
   font-size: 0.8rem;
   padding-top: 4px;
 }
-.dowload-file-news-detail .item-download .downloads li a {
+.item-download .downloads li a {
   width: 27px;
   height: 27px;
 }
-.dowload-file-news-detail .item-download.item-download-right {
+.item-download.item-download-right {
   padding-left: 0.5rem;
 }
 
+@media (min-width: 991px) {
+  .pages_header {
+    background-color: rgba(240, 242, 244, 0.95);
+  }
+  .pages_header.fixd-header {
+    background-color: rgba(240, 242, 244, 0.95) !important;
+  }
+}
 .glass-case * {
   box-sizing: border-box !important;
   padding: 0;
