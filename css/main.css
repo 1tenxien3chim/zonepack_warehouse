@@ -21919,8 +21919,70 @@ footer .content_contact-home .contact_home input:hover, footer .content_contact-
 .detail-product-2 h1 {
   text-transform: uppercase;
 }
-.detail-product-2 .litst-product-view > a {
+.detail-product-2 .product_bg_list {
+  background: var(--color-bg);
+  padding: 2.5rem 0rem;
+}
+.detail-product-2 .product_bg_list .litst-product-view > a {
   display: block;
+  border-left: 2px solid var(--color-white);
+  width: 100%;
+  height: 24rem;
+  background: var(--color-bg);
+  padding: 0.625rem 1.25rem;
+  border-left: 2px solid var(--color-white);
+  border-bottom: 2px solid var(--color-white);
+  position: relative;
+}
+.detail-product-2 .product_bg_list .litst-product-view > a::after {
+  position: absolute;
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  background: transparent;
+  border-left: 3px solid var(--color-white);
+  border-bottom: 3px solid var(--color-white);
+  bottom: 0px;
+  left: 0px;
+  z-index: 10;
+}
+.detail-product-2 .product_bg_list .litst-product-view > a .product-view-info {
+  height: 6.65rem;
+  line-height: 6.65rem;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.detail-product-2 .product_bg_list .litst-product-view > a .product-view-info .product-view-name {
+  height: 5.4rem;
+  line-height: 5.4rem;
+  font-size: 5.33rem;
+  order: 1;
+  font-weight: bold;
+  white-space: nowrap;
+  color: var(--color-primary);
+}
+.detail-product-2 .product_bg_list .litst-product-view > a .product-view-name-affix {
+  height: 2.7rem;
+  line-height: 2.7rem;
+  font-size: 1.33rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  order: 2;
+}
+.detail-product-2 .product_bg_list .litst-product-view > a .product-view-name-affix:last-child {
+  order: 3;
+  color: var(--color-primary);
+}
+.detail-product-2 .product_bg_list .litst-product-view > a .product-view-picture {
+  line-height: 17.1rem;
+  text-align: right;
+}
+.detail-product-2 .product_bg_list .litst-product-view > a .product-view-picture img {
+  max-height: 17.1rem;
+}
+.detail-product-2 .product_bg_list .litst-product-view > a:hover {
+  background: var(--color-white);
 }
 
 .back_link {
