@@ -169,3 +169,16 @@
         }
     }
 }
+.detail-product-2{
+    .line-heading{
+        height: 44px; 
+    }
+    h1{
+        text-transform: uppercase;
+    }
+    .litst-product-view{
+        >a{
+            display: block;
+        }
+    }
+}
