@@ -139,7 +139,17 @@ $(".slider").owlCarousel({
     navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
     margin: 30,
     center: false,
-    video: true
+    video: false
+});
+
+// play videos 
+ $(document).ready(function () {
+    $('.play-button').click(function () {
+      var container = $(this).closest('.video-container');
+      var video = container.find('video').get(0);
+      video.play();
+      $(this).fadeOut(); // ẩn nút play
+    });
 });
 
 $(".slider-detail-news").owlCarousel({
