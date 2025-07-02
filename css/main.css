@@ -20867,7 +20867,7 @@ strong {
   .nav-menu > .menu-item {
     float: left;
     border-top: 0px;
-    padding: 0px 10px;
+    padding: 0px 20px;
   }
   .nav-menu > .menu-item:nth-child(2) {
     padding-left: 0px;
@@ -21786,6 +21786,14 @@ footer .content_contact-home .contact_home input:hover, footer .content_contact-
   font-size: 0.7rem;
   margin: 0px;
   text-align: center;
+}
+
+.download-header {
+  font-weight: 100;
+  font-size: 0.75rem;
+}
+.download-header:hover a {
+  color: var(--color-primary);
 }
 
 .category .list-category .box-product {

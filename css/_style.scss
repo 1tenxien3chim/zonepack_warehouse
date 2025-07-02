@@ -641,3 +641,13 @@ footer{
         text-align: center;
     }
 }
+// update 2/07/2025
+.download-header{
+    font-weight: 100;
+    font-size: 0.75rem;
+    &:hover{
+        a{
+            color: var(--color-primary);
+        } 
+    }
+}
