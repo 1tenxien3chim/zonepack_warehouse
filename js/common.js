@@ -121,32 +121,31 @@ new WOW().init();
 $(".slider").owlCarousel({
     items: 1,
     responsive: {
-        1200: { item: 1, },// breakpoint from 1200 up
-        992: { items: 1, },
-        768: { items: 1, },
-        480: { items: 1, },
-        0: { items: 1, }
+        1200: { items: 1 },
+        992: { items: 1 },
+        768: { items: 1 },
+        480: { items: 1 },
+        0: { items: 1 }
     },
     rewind: false,
     autoplay: false,
     autoplayHoverPause: true,
     autoplayTimeout: 5000,
-    smartSpeed: 5000, //slide speed smooth
+    smartSpeed: 5000,
     dots: true,
     dotsEach: false,
     loop: true,
     nav: true,
     navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
     margin: 30,
-    //animateOut: ['fadeOut', 'zoomOut'], // default: false
-    //animateIn: ['fadeIn', 'zoomIn'], // default: false
     center: false,
+    video: true
 });
 
 $(".slider-detail-news").owlCarousel({
     items: 1,
     responsive: {
-        1200: { item: 1, },// breakpoint from 1200 up
+        1200: { items: 1, },// breakpoint from 1200 up
         992: { items: 1, },
         768: { items: 1, },
         480: { items: 1, },
@@ -163,5 +162,5 @@ $(".slider-detail-news").owlCarousel({
     nav: true,
     navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
     margin: 30,
-    center: false,
+    center: false, 
 });
