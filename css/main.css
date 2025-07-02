@@ -21661,6 +21661,9 @@ button.scroll-top {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
+#new-home .box_new-home .img_new-home img {
+  max-height: 250px;
+}
 #new-home .box_new-home .desc .slick-card-category {
   margin: 0.625rem 0rem;
   font-size: 0.8rem;
@@ -21971,13 +21974,12 @@ footer .content_contact-home .contact_home input:hover, footer .content_contact-
 }
 .detail-product-2 .product_bg_list .litst-product-view > a {
   display: block;
-  border-left: 2px solid var(--color-white);
   width: 100%;
   height: 24rem;
   background: var(--color-bg);
   padding: 0.625rem 1.25rem;
-  border-left: 2px solid var(--color-white);
-  border-bottom: 2px solid var(--color-white);
+  border-left: 3px solid var(--color-white);
+  border-bottom: 3px solid var(--color-white);
   position: relative;
 }
 .detail-product-2 .product_bg_list .litst-product-view > a::after {
